@@ -27,7 +27,7 @@ class CounterCommand(sublime_plugin.TextCommand):
 
     def end_get_parameters(self, text):
         try:
-            starting_value, incrementing, padding = self.parse_parameters(text)
+            starting_value, incrementing_value, padding = self.parse_parameters(text)
 
             self.execute(starting_value, incrementing_value, padding)
         except:
